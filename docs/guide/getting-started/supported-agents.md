@@ -90,13 +90,8 @@ Creates `~/.config/opencode/plugins/rtk.ts`. Uses the `tool.execute.before` hook
 ```bash
 # Project-local (default)
 rtk init --pi
-
 # Global — all projects
 rtk init --pi --global
-
-# Pi only (no Claude/OpenCode install)
-rtk init --agent pi
-rtk init --agent pi --global
 ```
 
 Creates `.pi/extensions/rtk.ts` (local) or `~/.pi/agent/extensions/rtk.ts` (global). Pi auto-discovers extensions from both paths on startup.
